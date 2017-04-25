@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Loadscreen</title>
+	<script type="text/javascript">
+		
+	function setlight() {
+			document.getElementById("body").style.background="#fdfdff";
+			document.getElementById("boxen").style.background="#fdfdff";
+			document.getElementById("boxpt").style.background="#fdfdff";
+			document.getElementById("boxindex").style.background="#fdfdff";
+			document.getElementById("boxindex").style.color="#3F3F40";
+			document.getElementById("languages").style.background="#fdfdff";
+			document.getElementById("languages").style.color="#3F3F40";
+			document.getElementById("boxpt2").style.color="#3F3F40";
+			document.getElementById("boxpt").style.color="#3F3F40";
+			document.getElementById("boxen2").style.color="#3F3F40";
+			document.getElementById("boxen").style.color="#3F3F40";
+			document.getElementById("fontloading").style.color="#3F3F40";
+			document.getElementById("ldnading").style.color="#3F3F40";
+			document.getElementById("fontcarregando").style.color="#3F3F40";
+			document.getElementById("content").style.background="#fdfdff";
+		}
+		function setdark() {
+			document.getElementById("body").style.background="#3F3F40";
+			document.getElementById("boxen").style.background="#3F3F40";
+			document.getElementById("boxpt").style.background="#3F3F40";
+			document.getElementById("boxindex").style.background="#3F3F40";
+			document.getElementById("boxindex").style.color="#E4E4E5";
+			document.getElementById("languages").style.background="#3F3F40";
+			document.getElementById("languages").style.color="#E4E4E5";
+			document.getElementById("boxpt2").style.color="#E4E4E5";
+			document.getElementById("boxpt").style.color="#E4E4E5";
+			document.getElementById("boxen2").style.color="#E4E4E5";
+			document.getElementById("boxen").style.color="#E4E4E5";
+			document.getElementById("fontloading").style.color="#E4E4E5";
+			document.getElementById("ldnading").style.color="#E4E4E5";
+			document.getElementById("fontcarregando").style.color="#E4E4E5";
+			document.getElementById("content").style.background="#3F3F40";
+		}	
+		
+
+		function showpt() {
+			document.getElementById("boxen").style.display="none";
+			document.getElementById("boxindex").style.display="none";
+			document.getElementById("boxpt").style.display="flex";
+			document.getElementById("boxpt").style.display="flex";
+			document.getElementById("boxen2").style.fontWeight = "300";
+			document.getElementById("boxpt2").style.fontWeight = "bolder";
+		}
+
+		function showen() {
+			document.getElementById("boxpt").style.display="none";
+			document.getElementById("boxindex").style.display="none";
+			document.getElementById("boxen").style.display="flex";
+			document.getElementById("boxpt2").style.fontWeight = "300";
+			document.getElementById("boxen2").style.fontWeight = "bolder";
+		}
+	</script>
+	<meta name="viewport" content="width=320, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="body">
+	<div id="content">
+		<div id="languages">
+				<a href="#" onclick="setTimeout(showpt(), 2000);" id="boxpt2">Português</a>    |   
+				<a href="#" onclick="setTimeout(showen(), 2000);" id="boxen2">Inglês</a>			
+		</div>
+		<div id="boxindex">
+			<font id="fontloading" >	
+				<div id="ldnading" style="display: inline-block; margin-left: 20px;"><center>Escolha o idioma!</center></div>
+			</font>
+		</div>
+		<div id="boxen">
+			<font id="fontloading" >	
+				<div id="ldnl" style="display: inline-block;">L</div><div id="circle" style="display: inline-block;"></div><div id="ldnading" style="display: inline-block; margin-left: 20px;">ading</div>
+			</font>
+		</div>
+		<div id="boxpt">
+			<font id="fontcarregando" >
+			 	Carregand<div id="circle" style="display: inline-block;"></div>
+			</font>
+		</div>
+	<div id="spacement"></div>	
+	<div id="changecolor">
+		<div id="setlight" onclick="setlight()" style="display: inline-block;"></div>
+		<div id="setdark" onclick="setdark()" style="display: inline-block;"></div>
+	</div>
+	</div>
+</body>
+</html>
